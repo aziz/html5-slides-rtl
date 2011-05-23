@@ -1,8 +1,9 @@
-# Style Documentation: #
 
-put all the slides in an `article` tag inside a `section` tag with class `slides`.   
-add a `rtl` class to section tag to make the slides right to left.  
-In order to use custom persian font (Iranian Sans) just add the class `lang_fa` to the `html` tag.
+![html5slides with RTL support](http://f.cl.ly/items/0D0n2a2L1s0E3O432z2Z/html5slides_rtl_fa.jpg)
+
+# Documentation: #
+Put all the slides in an `article` tag inside a `section` tag with class `slides` (look at the templates for the markup).
+Add a `rtl` class to section tag to make the slides right to left. In order to use custom persian font (Iranian Sans) add the class `lang_fa` to the `html` tag.
 
 ## &lt;section class="slides"&gt; styles ##
 
@@ -15,32 +16,39 @@ In order to use custom persian font (Iranian Sans) just add the class `lang_fa` 
 * `template-default`:
 * `template-io2011`:
 
+### direction ###
+* `rtl`
+
 ## &lt;article&gt; styles ##
 
-* `biglogo`:
-* `nobackground`:
-* `fill`:
+* `biglogo`: The first slide where you put your logo, the presentation title and your name will come on the second slide
+* `nobackground`: Clean slate slide
+* `fill`: Where you have an image in the slide which you want it to fill the whole slide and work as a background image
 
 ## Slide Content Helpers: ##
 
 * colors: `blue,yellow,green,red,black,white`
-* `framed`: 
-* `centered`:
-* `noprettyprint`:
-* `author`:
-* `source`:
-* `smaller`:
+* `framed`: put a box around your content
+* `centered`
+* `noprettyprint`: adding this tag to `pre` tag will disable the syntax highlighting on it
+* `author`: used with `q` tag in quote slides
+* `source`: add a source to the bottom of your slide
+* `smaller`: make the font of the whole slide a little smaller
 * `build`:
 
 ## Markup: #
-h1: presentation title
-h2: sub section
-h3: slide title
-p: normal text
-ul,li,ol: bullet points
-q: for qoutes
-pre: for block of code
-code: for inline code
+* `h1`: presentation title
+* `h2`: sub section
+* `h3`: slide title
+* `p`: normal text
+* `ul,li,ol`: bullet points
+* `q`: for qoutes
+* `pre`: for block of code
+* `code`: for inline code
+
+
+## Makeing your own template ##
+
 
 
 * Style First Page: 
