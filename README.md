@@ -1,6 +1,8 @@
 # Style Documentation: #
 
-* `.slide`: put all the slides in an `article` tag inside a `section` tag with class `styles`
+put all the slides in an `article` tag inside a `section` tag with class `slides`.   
+add a `rtl` class to section tag to make the slides right to left.  
+In order to use custom persian font (Iranian Sans) just add the class `lang_fa` to the `html` tag.
 
 ## &lt;section class="slides"&gt; styles ##
 
@@ -53,4 +55,8 @@ don't forget about the widescreen layout when styling your template
     .slides.layout-faux-widescreen > article:not(.nobackground):not(.biglogo)
 
 
+# TODO #
+
+* persian webfont
+* touch styles in RTL
 

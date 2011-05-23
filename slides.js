@@ -139,6 +139,10 @@ if (objCtr.defineProperty) {
 
 /* Slide movement */
 
+function isRTL() {
+ return document.querySelector('section.rtl') !== null 
+}
+
 function getSlideEl(no) {
   if ((no < 0) || (no >= slideEls.length)) {
     return null;
@@ -480,8 +484,17 @@ function updateHash() {
 /* Event listeners */
 
 function handleBodyKeyDown(event) {
+  var right_arrow, left_arrow
+  if (isRTL()) {
+    right_arrow = 37;
+    left_arrow  = 39;    
+  } else {
+    right_arrow = 39;
+    left_arrow  = 37;
+  }
+  
   switch (event.keyCode) {
-    case 39: // right arrow
+    case right_arrow: // right arrow
     case 13: // Enter
     case 32: // space
     case 34: // PgDn
@@ -489,7 +502,7 @@ function handleBodyKeyDown(event) {
       event.preventDefault();
       break;
 
-    case 37: // left arrow
+    case left_arrow: // left arrow
     case 8: // Backspace
     case 33: // PgUp
       prevSlide();

@@ -8,8 +8,8 @@
 </head>
 
 <body style='display: none' >
-<div class="rtl">
-<section class='slides layout-faux-widescreen'>
+
+<section class='rtl slides layout-faux-widescreen template-io2011'>
   
   <article class='biglogo'>
   </article>
@@ -29,19 +29,33 @@
   
   <article>
     <p>
-امکان نفوذ گسترده ایران در عراق پس از خروج کامل نیروهای نظامی آمریکایی.آیا کشوری که با آزادی مردمش مخالف است در عراق به دنبال ازادی خواهد بود! 
-    </p>
+          این یک اسلاید ساده با کمی متن است. برای تنظیم سایز اسلاید می‌توانید کلاس تگ 
+        <code>section</code>
+        را تغییر دهید.
+    </p>  
     <p>
-در تاریخ ۳۳ ساله جمهوری اسلامی آقایان سید محمد خاتمی، میرحسین موسوی و اخیرا محمود احمدی نژاد به بنی صدر تشبیه شده‌اند
-    </p>
+           چیدمان‌های موجود عبارتند از
+        <code>layout-normal</code>،<br>
+        <code>layout-faux-widescreen</code> و 
+        <code>layout-widescreen</code>.
+    </p>  
   </article>
 
   <article>
     <h3>
-      بازداشت مبتکر منشور اخلاقی فوتبال به اتهام اختلاس مالی 
+      اسلاید ساده با عنوان و متن
     </h3>
     <p>
-      روزنامه روزگار چاپ تهران، در صفحه نخست خود از بازداشت دبیر ستاد منشور اخلاقی فدراسیون فوتبال ایران خبر داده است. حجت‌الاسلام محمد علی‌پور با حکم قاضی دادگاه ویژه روحانیت به اتهام اختلاس مالی در جام جهانی ۲۰۰۶ آلمان و پرونده منشوری‌ها بازداشت شده است. او علاوه بر اینکه دبیر ستاد منشور اخلاقی است، پست دبیر کمیته فرهنگی منشور اخلاقی، مشاور فرهنگی سازمان لیگ و همچنین عضو کمیته رسیدگی به تخلفات فوتبالی فدراسیون فوتبال را هم در اختیار دارد.
+      برای عنوان اسلاید ها از تگ
+      <code>h3</code>
+      استفاده کنید. 
+    </p>
+    <p>
+      برای راست به چپ کردن چیدمان اسلاید ها باید کلاس 
+      <code>rtl</code>
+       را به تگ
+       <code>section</code>
+       که تمامی اسلاید ها را در خود گنجانده، اضافه کنید.
     </p>
   </article>
 
@@ -50,12 +64,11 @@
       یک اسلاید ساده با عنوان و متن (با فونت کوچک)
     </h3>
     <p>
-      This is a slide with just text. This is a slide with just text.
-      This is a slide with just text. This is a slide with just text.
-      This is a slide with just text. This is a slide with just text.
-    </p>
-    <p>
-      There is more text just underneath with a <code>code sample: 5px</code>.
+      برای کوچک کردن اندازه قلم به کار رفته در اسلاید ها کافی است کلاس 
+      <code>smaller</code>
+      را به تگ 
+      <code>article</code>
+      که در برگیرنده محتویات هر اسلاید است اضافه کنید.
     </p>
   </article>
 
@@ -81,41 +94,53 @@
 
   <article>
     <h3>
-      Slide with bullet points that builds
+      اسلاید با بولت پوینت که محتوایاتش به تدریج به نمایش درمی‌آیند
     </h3>
     <ul class="build">
       <li>
-        This is an example of a list
+        کلیدهای عقب و جلو صفحه کلید را امتحان کنید
       </li>
       <li>
-        The list items fade in
+کلید‌های 
+<code>space</code> و
+<code>backspace</code>
+هم همین کاربرد را دارند
       </li>
       <li>
-        Last one!
+و همین طور کلید‌های 
+<code>page down</code> و
+<code>page up</code>
       </li>
     </ul>
 
     <div class="build">
-      <p>Any element with child nodes can build.</p>
-      <p>It doesn't have to be a list.</p>
+      <p>برای نمایش تدریجی نیازی به استفاده از لیست نیست.</p>
+      <p>تمام تگ‌هایی که داخل یک تگ مادر هستند می‌توانند همین قابلیت را داشته باشند. 
+        کافی است که کلاس 
+        <code>build</code>
+        را به تگ مادر اضافه کنید.
+      </p>
     </div>
   </article>
 
   <article class='smaller'>
     <h3>
-      Slide with bullet points (small font)
+اسلاید با بولت پوینت و قلم کوچکتر
     </h3>
     <ul>
       <li>
-        Use this template to create your presentation
+        برای رفتن به اسلاید قبل و بعد علاوه بر صفحه کلید می‌توانید از ماوس هم استفاده کنید
       <li>
-        Use the provided color palette, box and arrow graphics, and
-        chart styles
+سمت راست اسلاید را کلیک کرده تا به اسلاید قبل بروید
       <li>
-        Instructions are provided to assist you in using this
-        presentation template effectively
+کلیک کردن در منتهای الیه سمت چپ اسلاید شما را به اسلاید بعد می‌برد
       <li>
-        At all times strive to maintain Google's corporate look and feel
+این پرزنتیشن بر روی سیستم‌های لمسی مثل آی پد و یا آیفون هم کار میکند
+      <li>
+این پرزنتیشن از قلم آزاد فارسی
+<code>Iranian Sans</code>
+استفاده می‌کند
+
     </ul>
   </article>
 
@@ -127,44 +152,83 @@
     <table>
       <tr>
         <th>
-          نام
+مرورگر
         <th>
-          شغل
+شرکت سازنده
       <tr>
         <td>
-          Luke Mahé
+          کروم
         <td>
-          V.P. of Keepin’ It Real
+          گوگل
       <tr>
         <td>
-          Marcin Wichary
+          فایرفاکس
         <td>
-          The Michael Bay of Doodles
+          بنیاد موزیلا
+          <tr>
+            <td>
+سافاری
+            <td>
+اپل
+<tr>
+  <td>
+اینترنت اکسپلورر
+  <td>
+مایکروسافت
+<tr>
+  <td>
+اپرا
+  <td>
+اپرا
+
+
+          
+          
     </table>
   </article>
   
   <article class='smaller'>
-    <h3>
-      Slide with a table (smaller text)
-    </h3>
+    <h3>اسلایدی همراه با جدول (با قلم کوچکتر)</h3>
     
-    <table>
-      <tr>
-        <th>
-          Name
-        <th>
-          Occupation
-      <tr>
-        <td>
-          Luke Mahé
-        <td>
-          V.P. of Keepin’ It Real
-      <tr>
-        <td>
-          Marcin Wichary
-        <td>
-          The Michael Bay of Doodles
-    </table>
+<table>
+  <tr>
+    <th>کشور</th>
+    <th>تولید ناخالص ملی (سرانه)</th>
+  </tr>
+  <tr>
+    <td>نروژ</td>
+    <td>۸۴۴۴۴ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>سوئد</td>
+    <td>۴۸۸۷۵ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>ایالات متحده امریکا</td>
+    <td>۴۷۲۸۴ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>برزیل</td>
+    <td>۱۰۸۱۶ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>ترکیه</td>
+    <td>۱۰۳۹۹ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>تایلند</td>
+    <td>۴۹۹۲ دلار امریکا</td>
+  </tr>
+  <tr>
+    <td>ایران</td>
+    <td>۴۷۴۱ دلار امریکا</td>
+  </tr>
+</table>
+  
+  <div class="source">
+    منبع: 
+    <a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita">ویکی‌پدیا</a>
+  </div>
   </article>
   
   <article>
@@ -191,7 +255,7 @@
   
   <article>
     <h2>
-            بخش دوم: آشنایی با سیستم
+            بخش دوم: عکس و کد و ...
     </h2>
   </article>
 
@@ -326,6 +390,6 @@ u { color: 'umber' }
   </article>
 
 </section>
-</div>
+
 </body>
 </html>
