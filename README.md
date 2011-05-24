@@ -13,8 +13,8 @@ Add a `rtl` class to section tag to make the slides right to left. In order to u
 * `layout-widescreen`: makes slides 1100x700 but the content width is just like normal (this increases padding on the left and right side of the slide)
 
 ### templates
-* `template-default`:
-* `template-io2011`:
+* `template-default`
+* `template-io2011`
 
 ### direction ###
 * `rtl`
@@ -27,9 +27,9 @@ Add a `rtl` class to section tag to make the slides right to left. In order to u
 
 ## Slide Content Helpers: ##
 
-* colors: `blue,yellow,green,red,black,white`
-* `framed`: put a box around your content
+* `blue,yellow,green,red,black,white`
 * `centered`
+* `framed`: put a box around your content
 * `noprettyprint`: adding this tag to `pre` tag will disable the syntax highlighting on it
 * `author`: used with `q` tag in quote slides
 * `source`: add a source to the bottom of your slide
